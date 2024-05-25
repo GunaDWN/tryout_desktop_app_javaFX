@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+           prefHeight="1207.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/polinema.png"/>
+            </image>
+            <StackPane.margin>
+                <Insets top="80.0"/>
+            </StackPane.margin>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/Vector.png"/>
+            </image>
+            <StackPane.margin>
+                <Insets top="260.0"/>
+            </StackPane.margin>
+        </ImageView>
+        <Label text="Application :">
+            <StackPane.margin>
+                <Insets top="240.0"/>
+            </StackPane.margin>
+        </Label>
+        <Label text="Project By :">
+            <StackPane.margin>
+                <Insets right="610.0" top="400.0"/>
+            </StackPane.margin>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Group>
+            <children>
+                <ImageView fitHeight="300.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/GunaDWN.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="300.0" fitWidth="155.0" layoutX="164.8000030517578" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Image/MRisal.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="300.0" fitWidth="155.0" layoutX="330.3999938964844" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Image/AdistyFL.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="300.0" fitWidth="155.0" layoutX="496.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/SamuelB.png"/>
+                    </image>
+                </ImageView>
+            </children>
+            <StackPane.margin>
+                <Insets top="430.0"/>
+            </StackPane.margin>
+        </Group>
+        <Label text="Apllication Of The Course:">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+            <StackPane.margin>
+                <Insets right="530.0" top="770.0"/>
+            </StackPane.margin>
+        </Label>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <StackPane.margin>
+                <Insets right="290.0" top="810.0"/>
+            </StackPane.margin>
+            <image>
+                <Image url="@Image/PPBO.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/TPBO.png"/>
+            </image>
+            <StackPane.margin>
+                <Insets left="290.0" top="810.0"/>
+            </StackPane.margin>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/BDL.png"/>
+            </image>
+            <StackPane.margin>
+                <Insets top="980.0"/>
+            </StackPane.margin>
+        </ImageView>
+    </children>
+</StackPane>

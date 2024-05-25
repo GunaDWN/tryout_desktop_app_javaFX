@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <StackPane prefHeight="41.0" prefWidth="600.0" style="-fx-background-color: #82DEFF;" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <StackPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #82DEFF;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <StackPane fx:id="centerdb" alignment="TOP_LEFT" prefHeight="502.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/MakeMapel.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <TextField fx:id="newMapel" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="195.0">
+                     <StackPane.margin>
+                        <Insets left="90.0" top="85.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <Label text="Add Mapel">
+                     <StackPane.margin>
+                        <Insets left="10.0" top="90.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddMapel" mnemonicParsing="false" prefHeight="26.0" prefWidth="51.0" text="Add">
+                     <StackPane.margin>
+                        <Insets left="300.0" top="90.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <ImageView fitHeight="26.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/MapelYangDibuat.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="10.0" top="140.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <TextField fx:id="textField1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="58.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <StackPane.margin>
+                        <Insets left="10.0" top="170.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <Label fx:id="labelTOid" prefHeight="18.0" prefWidth="265.0">
+                     <StackPane.margin>
+                        <Insets left="10.0" top="40.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <GridPane fx:id="gridPaneMapel" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="142.0" prefWidth="255.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.39999465942384" minWidth="10.0" prefWidth="64.00003204345703" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.59995803833007" minWidth="10.0" prefWidth="191.19996795654296" />
+                    </columnConstraints>
+                     <StackPane.margin>
+                        <Insets top="230.0" />
+                     </StackPane.margin>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" text="Button" />
+                        <Button fx:id="button2" mnemonicParsing="false" text="Button" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

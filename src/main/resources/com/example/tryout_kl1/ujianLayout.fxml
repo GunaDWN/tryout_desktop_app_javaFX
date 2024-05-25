@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.tryout_kl1.Controller.UjianController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <center>
+        <VBox spacing="10">
+
+            <Label fx:id="numberLabel" text="" />
+            <!-- Label untuk menampilkan pertanyaan -->
+            <Label fx:id="pertanyaanLabel" text="" wrapText="true" />
+
+            <!-- Radio Buttons untuk opsi jawaban -->
+            <RadioButton fx:id="opsi1RadioButton" text="Opsi 1" />
+            <RadioButton fx:id="opsi2RadioButton" text="Opsi 2" />
+            <RadioButton fx:id="opsi3RadioButton" text="Opsi 3" />
+            <RadioButton fx:id="opsi4RadioButton" text="Opsi 4" />
+            <RadioButton fx:id="opsi5RadioButton" text="Opsi 5" />
+
+            <!-- Tombol untuk navigasi ke pertanyaan berikutnya dan sebelumnya -->
+            <HBox spacing="10">
+                <Button text="Prev" onAction="#handlePrevButtonClick" />
+                <Button text="Next" onAction="#handleNextButtonClick" />
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

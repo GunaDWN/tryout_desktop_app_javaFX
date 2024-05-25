@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="727.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tryout_kl1.Controller.AdminDBoardController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <children>
+        <StackPane prefHeight="150.0" prefWidth="1024.0" />
+    </children>
+    <top>
+        <StackPane alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="1024.0" styleClass="navdash" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="1024.0">
+                    <children>
+                  <Label fx:id="usernameLogin" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="247.0">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                        <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+                            <image>
+                                <Image url="@Image/profile-icon-design-free-vector.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <ImageView fitHeight="38.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+                    <image>
+                        <Image url="@Image/Vector.png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets left="80.0" />
+                    </StackPane.margin>
+                </ImageView>
+                <ImageView fitHeight="60.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/polinema.png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets bottom="7.0" left="10.0" />
+                    </StackPane.margin>
+                </ImageView>
+                <ImageView fitHeight="9.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/D3ManajemenInformatika(Pamekasan).png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets left="95.0" top="50.0" />
+                    </StackPane.margin>
+                </ImageView>
+            </children>
+        </StackPane>
+    </top>
+    <left>
+        <StackPane alignment="TOP_CENTER" prefHeight="645.0" prefWidth="129.0" styleClass="leftdash" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleClick" prefHeight="52.0" prefWidth="147.0" text="Home">
+                    <StackPane.margin>
+                        <Insets top="5.0" />
+                    </StackPane.margin>
+                </Button>
+                <Button fx:id="btnAvailableTO" mnemonicParsing="false" onAction="#handleClick" prefHeight="52.0" prefWidth="147.0" text="Available TryOut">
+                    <StackPane.margin>
+                        <Insets top="58.0" />
+                    </StackPane.margin>
+                </Button>
+            <Button fx:id="btnAddTO" mnemonicParsing="false" onAction="#handleClick" prefHeight="52.0" prefWidth="147.0" text="Tambah Tryout">
+               <StackPane.margin>
+                  <Insets top="112.0" />
+               </StackPane.margin>
+            </Button>
+            </children>
+        </StackPane>
+    </left>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffff;" BorderPane.alignment="CENTER">
+            <children>
+                <GridPane fx:id="pnAvailableTO" style="-fx-background-color: #ffff;">
+                    <rowConstraints>
+                        <RowConstraints maxHeight="315.9999755859375" minHeight="10.0" prefHeight="33.399998092651366" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="604.5999923706055" minHeight="10.0" prefHeight="161.40000190734864" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="604.5999923706055" minHeight="10.0" prefHeight="450.1999877929687" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="894.0" minWidth="10.0" prefWidth="862.2000198364258" />
+                    </columnConstraints>
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="navBtn" GridPane.rowIndex="1">
+                            <image>
+                                <Image url="@Image/Group76.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="40.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Image/TryOutAvailable.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="40.0" top="10.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                    </children>
+                </GridPane>
+            <GridPane fx:id="pnAddTO" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #ffff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <StackPane prefHeight="87.0" prefWidth="894.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/logoTambahTO.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </top>
+                     <center>
+                        <StackPane alignment="TOP_LEFT" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="ID TRYOUT             :">
+                                 <StackPane.margin>
+                                    <Insets left="20.0" top="40.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label text="TOTAL SKOR          :">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets left="20.0" top="140.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <TextField fx:id="TOidField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="29.0" prefWidth="291.0" styleClass="txtField">
+                                 <StackPane.margin>
+                                    <Insets left="270.0" top="45.0" />
+                                 </StackPane.margin>
+                              </TextField>
+                              <TextField fx:id="TONameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="29.0" prefWidth="291.0" styleClass="txtField">
+                                 <StackPane.margin>
+                                    <Insets left="270.0" top="95.0" />
+                                 </StackPane.margin>
+                              </TextField>
+                              <TextField fx:id="TOScoreField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="29.0" prefWidth="291.0" styleClass="txtField">
+                                 <StackPane.margin>
+                                    <Insets left="270.0" top="145.0" />
+                                 </StackPane.margin>
+                              </TextField>
+                              <Label text="*10 digit character">
+                                 <StackPane.margin>
+                                    <Insets left="570.0" top="60.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label text="GAMBAR TRYOUT  :">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets left="20.0" top="190.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label text="NAMA TRYOUT      :">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets left="20.0" top="90.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <ImageView fx:id="TOImageField" fitHeight="178.0" fitWidth="148.0" onMouseClicked="#imageChooserHandle" pickOnBounds="true" preserveRatio="true" styleClass="curToBtn">
+                                 <StackPane.margin>
+                                    <Insets left="270.0" top="195.0" />
+                                 </StackPane.margin>
+                                 <image>
+                                    <Image url="@Image/PlusImage.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="messageLabelAddTO" prefHeight="18.0" prefWidth="244.0" textFill="#ff6f6f">
+                                 <StackPane.margin>
+                                    <Insets left="300.0" top="15.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Button fx:id="btnNextToAddMapel" mnemonicParsing="false" onAction="#handleClick" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #57BAFF; -fx-border-color: #0000;" styleClass="curToBtn" text="Next">
+                                 <StackPane.margin>
+                                    <Insets left="470.0" top="390.0" />
+                                 </StackPane.margin>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnAddMapel" style="-fx-background-color: #ffff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="632.0" minHeight="10.0" prefHeight="548.7999877929688" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="314.4" minHeight="10.0" prefHeight="96.0000122070312" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <StackPane fx:id="centerdb" alignment="TOP_LEFT" prefHeight="502.0" prefWidth="786.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/MakeMapel.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="10.0" top="30.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <TextField fx:id="newMapelField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="195.0">
+                           <StackPane.margin>
+                              <Insets left="90.0" top="85.0" />
+                           </StackPane.margin>
+                        </TextField>
+                        <Label text="Add Mapel">
+                           <StackPane.margin>
+                              <Insets left="10.0" top="90.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnAddMapel" mnemonicParsing="false" onAction="#handleClick" prefHeight="26.0" prefWidth="51.0" text="Add">
+                           <StackPane.margin>
+                              <Insets left="300.0" top="90.0" />
+                           </StackPane.margin>
+                        </Button>
+                        <ImageView fitHeight="26.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/MapelYangDibuat.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="10.0" top="140.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Label fx:id="labelTOid" prefHeight="18.0" prefWidth="265.0">
+                           <StackPane.margin>
+                              <Insets left="10.0" top="40.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <GridPane fx:id="mapelContainer" alignment="TOP_CENTER" maxWidth="-Infinity" prefHeight="363.0" prefWidth="534.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="155.8000061035156" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.2000366210938" minWidth="10.0" prefWidth="124.80001220703127" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="538.3999938964844" minWidth="10.0" prefWidth="257.5999877929687" />
+                          </columnConstraints>
+                           <StackPane.margin>
+                              <Insets left="10.0" top="180.0" />
+                           </StackPane.margin>
+                        </GridPane>
+                     </children>
+                  </StackPane>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="35.0" prefWidth="894.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="btnNextToAddQuestion" mnemonicParsing="false" onAction="#handleClick" prefHeight="26.0" prefWidth="63.0" style="-fx-background-color: #82DEFF;" text="Next">
+                           <HBox.margin>
+                              <Insets right="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnAddQuestion" style="-fx-background-color: #ffff;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="314.4" minHeight="10.0" prefHeight="51.000003051757815" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="615.200004196167" minHeight="10.0" prefHeight="47.799992370605466" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="615.200004196167" minHeight="10.0" prefHeight="543.0000076293945" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #E3F8FF;">
+                     <children>
+                        <ImageView fitHeight="52.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/MakeQuestion.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="10.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <AnchorPane fx:id="hBoxRow1" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="btnAddQuestion" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleClick" text="+ Add Question" AnchorPane.leftAnchor="10.0" />
+                        <ChoiceBox fx:id="choiceBoxMapel" layoutX="137.0" layoutY="12.0" prefWidth="150.0" AnchorPane.leftAnchor="120.0" />
+                        <Button fx:id="btnSaveQuestionAndNextQuestion" layoutX="385.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleClick" text="Save &amp; next Qustion" AnchorPane.leftAnchor="450.0" />
+                        <Label fx:id="MessageLableToChooseMapelFirst" layoutX="291.0" layoutY="16.0" />
+                     </children>
+                  </AnchorPane>
+                  <BorderPane fx:id="listQuestionContent" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <center>
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="scrollPane1" BorderPane.alignment="CENTER">
+                           <content>
+                              <AnchorPane prefHeight="211.0" prefWidth="521.0">
+                                 <children>
+                                    <Label fx:id="labelQuestionNo" prefHeight="18.0" prefWidth="133.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                                    <TextArea fx:id="questionField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="104.0" prefWidth="516.0" promptText="Type a question" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+                                    <Button fx:id="btnAddAnswerOption" mnemonicParsing="false" onAction="#handleClick" prefHeight="7.0" prefWidth="100.0" text="+ Opsi Jawaban" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="163.0" />
+                                    <VBox fx:id="vBoxForOptionPane" prefWidth="554.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="201.0" />
+                                    <Label fx:id="labelDescOption" layoutX="130.0" layoutY="167.0" textFill="#00bfff" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </center>
+                     <right>
+                        <ScrollPane fx:id="listBoxScrol" prefHeight="545.0" prefWidth="351.0" BorderPane.alignment="CENTER">
+                           <content>
+                              <GridPane fx:id="listBox">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </right>
+                  </BorderPane>
+               </children>
+            </GridPane>
+                <GridPane fx:id="pnHome" style="-fx-background-color: #ffff;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <children>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;">
+                     <content>
+                        <StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1207.0" prefWidth="1400.0" style="-fx-background-color: #0000;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/polinema.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets top="80.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/Vector.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets top="260.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <Label text="Application :">
+                                 <StackPane.margin>
+                                    <Insets top="240.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label text="Project By :">
+                                 <StackPane.margin>
+                                    <Insets right="610.0" top="400.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Group>
+                                 <children>
+                                    <ImageView fitHeight="300.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/GunaDWN.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="300.0" fitWidth="155.0" layoutX="164.8000030517578" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/MRisal.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="300.0" fitWidth="155.0" layoutX="330.3999938964844" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/AdistyFL.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="300.0" fitWidth="155.0" layoutX="496.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/SamuelBenny.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets top="430.0" />
+                                 </StackPane.margin>
+                              </Group>
+                              <Label text="Apllication Of The Course:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets right="530.0" top="770.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="290.0" top="810.0" />
+                                 </StackPane.margin>
+                                 <image>
+                                    <Image url="@Image/PPBO.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/TPBO.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets left="290.0" top="810.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/BDL.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets top="980.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+                </GridPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tryout_kl1.Controller.RegisterController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <left>
+        <StackPane prefHeight="727.0" prefWidth="382.0" style="-fx-background-color: #EEF5FF;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleTryExamLogo" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+                    <image>
+                        <Image url="@Image/Vector.png" />
+                    </image>
+               <StackPane.margin>
+                  <Insets right="12.0" />
+               </StackPane.margin>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Image/LogoPolinema(PoliteknikNegeriMalang).png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets bottom="200.0" right="12.0" />
+                    </StackPane.margin>
+                </ImageView>
+            </children>
+        </StackPane>
+    </left>
+    <center>
+        <StackPane alignment="TOP_CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffff;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="75.0" fitWidth="70.0" layoutX="300.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="559.4" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="299.6" AnchorPane.topAnchor="105.0">
+                            <image>
+                                <Image url="@Image/Register.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="145.0" layoutY="225.0" text="First Name">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="145.0" layoutY="274.0" text="Last Name">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="42.0" fitWidth="333.0" layoutX="172.0" layoutY="515.0" onMouseClicked="#registerHandle" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+                            <image>
+                                <Image url="@Image/Group78.png" />
+                            </image>
+                        </ImageView>
+                  <Label layoutX="145.0" layoutY="319.0" text="Username">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="145.0" layoutY="366.0" text="Birthday">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="signupLabelMessage" alignment="CENTER" layoutX="147.0" layoutY="194.0" prefHeight="18.0" prefWidth="380.0" textFill="#2aad00" />
+                  <Label layoutX="145.0" layoutY="412.0" text="Password">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="145.0" layoutY="461.0" text="Confirm Password">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="confLabelMessage" alignment="CENTER" layoutX="397.0" layoutY="443.0" prefHeight="18.0" prefWidth="154.0" textFill="#ab0000" />
+                  <Label fx:id="RegtoLog" layoutX="370.0" layoutY="557.0" onMouseClicked="#regToSignHandle" styleClass="curToBtn" text="You Already Signup ? Login Now !!" textFill="#ff5e5e" />
+                  <TextField fx:id="firstNameField" layoutX="304.0" layoutY="223.0" prefHeight="26.0" prefWidth="222.0" promptText="First Name" />
+                  <TextField fx:id="lastNameField" layoutX="304.0" layoutY="271.0" prefHeight="26.0" prefWidth="222.0" promptText="Last Name" />
+                  <TextField fx:id="usernameField" layoutX="304.0" layoutY="317.0" prefHeight="26.0" prefWidth="222.0" promptText="Username" />
+                  <DatePicker fx:id="birthField" layoutX="304.0" layoutY="364.0" prefHeight="26.0" prefWidth="222.0" />
+                  <PasswordField fx:id="passwordField" layoutX="304.0" layoutY="409.0" prefHeight="26.0" prefWidth="222.0" promptText="Password" />
+                  <PasswordField fx:id="confPasswordField" layoutX="304.0" layoutY="458.0" prefHeight="26.0" prefWidth="222.0" promptText="Confirm Password" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

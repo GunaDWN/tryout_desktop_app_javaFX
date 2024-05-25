@@ -1,0 +1,32 @@
+.navdash{
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 0.1px 0;
+    -fx-background-color: #EEF5FF;
+}
+
+.leftdash{
+    -fx-border-color: grey;
+    -fx-border-width: 0 0.1px 0 0;
+    -fx-background-color: #EEF5FF;
+}
+
+.navBtn{
+    -fx-cursor: hand;
+    -fx-transition: translateY 0.3s;
+}
+
+.navBtn:hover{
+    -fx-translate-y: -2;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.8), 10, 0, 0, 0);
+}
+.curToBtn{
+    -fx-cursor: hand;
+}
+.txtField{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+#scrollPane1{
+    -fx-background-color: Black;
+}

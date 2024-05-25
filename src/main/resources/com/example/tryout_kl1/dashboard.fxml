@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Dashboard.fxml -->
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="727.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tryout_kl1.Controller.DashboardController">
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="1024.0" />
+   </children>
+   <top>
+      <StackPane alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="1024.0" styleClass="navdash" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="1024.0">
+               <children>
+                  <ImageView fx:id="loginBtn" fitHeight="30.0" fitWidth="59.0" onMouseClicked="#handleLogin" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+                     <image>
+                        <Image url="@Image/LoginLogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="signUpBtn" fitHeight="29.0" fitWidth="86.0" onMouseClicked="#handleRegister" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+                     <image>
+                        <Image url="@Image/RegisterLogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fitHeight="38.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" styleClass="navBtn">
+               <image>
+                  <Image url="@Image/Vector.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets left="80.0" />
+               </StackPane.margin>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/polinema.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="7.0" left="10.0" />
+               </StackPane.margin>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/D3ManajemenInformatika(Pamekasan).png" />
+               </image>
+               <StackPane.margin>
+                  <Insets left="95.0" top="50.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+   </top>
+   <left>
+      <StackPane alignment="TOP_CENTER" prefHeight="645.0" prefWidth="129.0" styleClass="leftdash" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleClick" prefHeight="52.0" prefWidth="147.0" text="Home">
+               <StackPane.margin>
+                  <Insets top="5.0" />
+               </StackPane.margin>
+            </Button>
+            <Button fx:id="btnAvailableTO" mnemonicParsing="false" onAction="#handleClick" prefHeight="52.0" prefWidth="147.0" text="Available TryOut">
+               <StackPane.margin>
+                  <Insets top="58.0" />
+               </StackPane.margin>
+            </Button>
+         </children>
+      </StackPane>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="pnAvailableTO">
+               <rowConstraints>
+                  <RowConstraints maxHeight="315.9999755859375" minHeight="10.0" prefHeight="33.399998092651366" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="604.5999923706055" minHeight="10.0" prefHeight="161.40000190734864" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="604.5999923706055" minHeight="10.0" prefHeight="450.1999877929687" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="894.0" minWidth="10.0" prefWidth="862.2000198364258" />
+               </columnConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="navBtn" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@Image/Group76.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/TryOutAvailable.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" top="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnHome" style="-fx-background-color: #ffff;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
